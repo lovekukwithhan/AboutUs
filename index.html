@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>SleepWhere</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+    @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+    </style>
+</head>
+
+<body>
+    <div id="little_header">
+    <h2>Sleep Where?!<br>
+    
+        <div id="pop">
+        <div id="popcorn"><button id="c">X</button></div>
+
+        <div id="pop_menu">
+                <ul>소개↓
+                    <li>AboutUs</li>
+                </ul>
+    
+                <br> <br>
+
+                <ul>
+                    <li>찾아보기</li>
+                </ul>
+    
+                <br> <br>
+
+                 <ul>
+                    <li>사용가이드</li>
+                </ul>
+
+                <br> <br>
+    
+                <ul>SDHS↓ <br>
+                    <li>Contact Us</li>
+                    <li>위치</li>
+                </ul>
+            </div>
+
+        </div>
+
+        Stay Here!</h2>
+
+        <div id="icon_group">
+        <img id = "pop_btn" src="list.png" alt="list_icon" title="메뉴보기">
+        <img id = "home" src="homeicon.png" alt="홈" title="HOME">
+        </div>
+    </div>
+
+    <div id="contain">
+    <div id="opacity">
+    
+    <p>
+    서울은 대한민국의 중심에 위치한 명문 도시입니다.<br><br>
+
+    남산타워부터 이태원, 명동, 경복궁까지 <br><br>"서울" 하면 떠오르는 관광 명소들은 수도없이 많습니다.<br><br>
+
+    이러한 서울에는 남녀노소 국적불문, 해외는 물론국내의 관광객까지 발걸음이 잦습니다.<br><br>
+
+    "서울"은 이제 대한민국을 넘어 세계적으로 떠오르는 관광지가 되었습니다. <br><br>
+
+    하루안에 서울에 대해 알기에는 어딘가 조금 부족한 감이있고, <br><br>
+
+    대부분의 관광객(주로 해외)은 1박 이상을 잡고 서울로 향해옵니다. <br><br>
+
+    우리가 흔히 1박 이상의 "관광", 혹은 "여행"을 계획할때 <br><br>숙소를 정하는 일은 너무나도 당연한 일입니다.<br><br>
+
+    낯선 타지에서도 나의 집 못지 않는 편안함과 아늑함, 안정감을 <br><br>선사할수있는 숙소를 제공하는 서비스<br><br>
+
+    또한 그 중에서도 위치, 시설, 가격 등<br><br> "내"가 중요시하는 요소들을 충분히 고려해 결정할수 있는 선택지를 제공하는 서비스<br><br>
+
+    당신의 추억에 일조할수 있도록<br><br><br>
+
+
+    슬립웨어가 함께하겠습니다.
+    </p>
+    </div>
+
+</div>
+
+<footer>
+    <img src="footer.png" alt="footer">
+</footer>
+
+<script>
+        $("#c").on("click", close);
+        function close(){
+            $("#pop").css({"display":"none"});
+            $("#pop_menu").css({"display":"none"});
+        }
+
+        $("#pop_btn").on("click", open);
+
+        function open(){
+            $("#pop").css({"display":"block"});
+            $("#pop_menu").css({"display":"block"});
+        }
+    </script>
+
+</body>
+</html>
