@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +8,7 @@
 }
 
 body {
-    background-image:url("room.jpg");
+    background-image:url("cover.jpg");
     background-size: cover;
 }
 
@@ -60,6 +61,12 @@ body {
 }
 
 #c{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+    top:20px;
+    left:50%;
+    transform: translateX(-50%);
     background-color: black;
     color:white;
 }
@@ -89,18 +96,13 @@ display:none;
 }
 
 #popcorn{
-position:absolute;
-width: 700px;
-height: 700px;
-left:50%;
-top:50%;
-transform:translate(-50%,-50%);
 }
 
 #opacity p{
     font-size:18px;
     line-height:25px;
     margin-top:5%;
+    color:black;
 }
 
 #pop_menu{
@@ -111,50 +113,32 @@ transform:translate(-50%,-50%);
     color:black;
 }
 
-footer{
-    margin-top:80px;
-    background-color: #fff;
-    width: 100%;
-    height: 100px;
-}
-
-#left p {
-    font-size:10px;
-}
-
-#left{
-    line-height:30px;
-    width: 250px;
-    padding-top:5px;
-    margin-left:15%;
-}
-
-#space {
-    border:1px solid red;
-    height: auto;
-}
-
-#core img{
-    float:left;
-    width: 40px;
-    height: 40px;
-
-}
-
-#right p {
-    font-size:10px;
-}
-
-#right{
-    float:right;
-    border: 1px solid pink;
-    line-height:30px;
-    width: 250px;
-    padding-top:5px;
-    margin-right:15%;
-}
 
 footer img{
     width: 100%;
     height: 100px;
+    margin-top:40px;
+}
+
+a {
+    color: #666;
+}
+
+#opacity #search a{
+    color:black;
+    font-family: 'Amatic SC', cursive;
+    font-size : 35px;
+}
+
+#opacity p a {
+    color:blue;
+    font-family: 'Amatic SC', cursive;
+    font-size : 35px;
+}
+
+#p{
+    color:black;
+    font-size:35px;
+    font-family: 'Nanum Gothic', sans-serif;
+    line-height:40px;
 }
